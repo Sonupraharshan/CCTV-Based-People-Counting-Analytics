@@ -1,0 +1,58 @@
+# YOLOv8 Training Configuration
+# For fine-tuning on MOT17 + PETS2009
+
+# Dataset configuration
+path: datasets/MOT17_YOLO  # Dataset root directory
+train: train/images        # Train images (relative to 'path')
+val: train/images          # Validation images (can create separate val split)
+
+# Classes
+names:
+  0: person
+
+nc: 1  # Number of classes
+
+# Training hyperparameters
+epochs: 50
+batch: 16
+imgsz: 640
+device: 0  # GPU device (0 for first GPU, cpu for CPU)
+
+# Model
+model: yolov8n.pt  # Base model (n=nano, s=small, m=medium, l=large, x=xlarge)
+
+# Optimization
+optimizer: AdamW
+lr0: 0.01          # Initial learning rate
+lrf: 0.01          # Final learning rate (lr0 * lrf)
+momentum: 0.937    # SGD momentum/Adam beta1
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+
+# Data augmentation
+hsv_h: 0.015       # HSV-Hue augmentation
+hsv_s: 0.7         # HSV-Saturation augmentation
+hsv_v: 0.4         # HSV-Value augmentation
+degrees: 0.0       # Rotation (+/- deg)
+translate: 0.1     # Translation (+/- fraction)
+scale: 0.5         # Scale (+/- gain)
+shear: 0.0         # Shear (+/- deg)
+perspective: 0.0   # Perspective (+/- fraction)
+flipud: 0.0        # Vertical flip (probability)
+fliplr: 0.5        # Horizontal flip (probability)
+mosaic: 1.0        # Mosaic augmentation (probability)
+mixup: 0.0         # Mixup augmentation (probability)
+copy_paste: 0.0    # Copy-paste augmentation (probability)
+
+# Validation
+val_period: 1      # Validate every N epochs
+save_period: 5     # Save checkpoint every N epochs
+
+# Other
+patience: 50       # Early stopping patience
+project: models/finetuned
+name: yolov8_mot17
+exist_ok: True
+verbose: True

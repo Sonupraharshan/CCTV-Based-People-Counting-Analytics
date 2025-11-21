@@ -1,0 +1,40 @@
+# Core Deep# Core ML/CV
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Tracking
+filterpy>=1.4.5
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Streamlit Dashboard
+streamlit>=1.28.0
+streamlit-drawable-canvas>=0.9.0
+streamlit-image-coordinates>=0.1.6
+
+# Visualization
+plotly>=5.17.0
+
+# Data
+numpy>=1.24.0
+pandas>=2.1.0
+
+# Evaluation
+motmetrics>=1.4.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# Model Export
+onnx>=1.14.0
+onnxruntime-gpu>=1.16.0
+
+# Optional: TensorRT (requires NVIDIA GPU and separate installation)
+# nvidia-tensorrt>=8.6.0
+pytest-cov>=4.1.0

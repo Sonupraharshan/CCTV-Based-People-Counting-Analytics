@@ -1,0 +1,79 @@
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Datasets
+datasets/PETS2009/
+datasets/MOT17/
+datasets/MOT17_YOLO/
+*.zip
+*.tar.gz
+
+# Models and checkpoints
+models/pretrained/*.pt
+models/finetuned/
+models/exports/
+*.pt
+*.onnx
+*.engine
+*.trt
+runs/
+
+# Database
+database/*.db
+database/*.sqlite
+*.db
+*.sqlite
+
+# Logs
+logs/
+*.log
+
+# Outputs
+output/
+results/
+*.mp4
+*.avi
+*.mov
+examples/*.mp4
+examples/*.avi
+
+# Temporary files
+*.tmp
+temp/
+*.cache
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+docs/_build/
