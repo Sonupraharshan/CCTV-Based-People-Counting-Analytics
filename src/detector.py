@@ -41,7 +41,7 @@ class Detector:
         # Load model
         print(f"Loading detector from {model_path}...")
         self.model = YOLO(model_path)
-        self.model.to(device)
+        self.model.to("cpu")
         print(f"Detector loaded on {device}")
         
         # Model info
