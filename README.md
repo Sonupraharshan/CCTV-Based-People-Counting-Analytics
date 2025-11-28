@@ -2,8 +2,6 @@
 
 A production-ready, real-time people counting system that detects, tracks, and counts people crossing a user-defined line in CCTV footage. Built with YOLOv8, StrongSORT, and Streamlit for robust performance in crowded and occluded scenes.
 
-![System Architecture](docs/architecture.png)
-
 ## Features
 
 🎯 **Core Capabilities**
