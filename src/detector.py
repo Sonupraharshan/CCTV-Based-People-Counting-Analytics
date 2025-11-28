@@ -83,7 +83,7 @@ class Detector:
             conf=self.conf_threshold,
             iou=self.nms_iou,
             classes=self.classes,
-            device=self.device,
+            device="cpu",
             verbose=False
         )
         
@@ -127,7 +127,7 @@ class Detector:
             conf=self.conf_threshold,
             iou=self.nms_iou,
             classes=self.classes,
-            device=self.device,
+            device="cpu",
             verbose=False,
             stream=True  # Use streaming for memory efficiency
         )
