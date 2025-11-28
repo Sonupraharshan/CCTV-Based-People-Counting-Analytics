@@ -418,10 +418,6 @@ Contributions are welcome! Please:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - **Ultralytics** - YOLOv8 implementation
@@ -446,7 +442,7 @@ If you use this project in your research, please cite:
 
 For questions and support:
 - Open an issue on GitHub
-- Email: [your-email@example.com]
+- Email: [sonupraharshan@example.com]
 - Documentation: [Wiki](https://github.com/Sonupraharshan/CCTV-Based-People-Counting-Analytics/wiki)
 
 ---
